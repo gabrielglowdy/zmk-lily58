@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -91,10 +91,10 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans          &trans           &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans          &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans
             >;
         };
