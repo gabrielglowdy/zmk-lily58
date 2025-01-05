@@ -73,6 +73,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            label = "lower";
         };
 
         raise_layer {
@@ -93,6 +94,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            label = "raise";
         };
 
         mouse_layer {
@@ -104,6 +106,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans          &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans
             >;
+
+            label = "mouse";
         };
     };
 };
