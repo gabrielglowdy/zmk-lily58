@@ -13,6 +13,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -93,11 +95,11 @@
 
             display-name = "lower";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans       &trans            &trans             &trans     &kp MINUS      &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans       &trans            &kp UP_ARROW       &trans     &trans         &kp BACKSPACE
-&trans  &trans  &trans  &trans  &trans  &trans                          &trans       &kp LEFT          &kp DOWN           &kp RIGHT  &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp MINUS    &kp EQUAL  &kp KP_PLUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &kp BACKSLASH  &trans
-                        &trans  &trans  &trans  &trans       &kp PIPE   &trans       &trans            &trans
+&sys_reset      &bootloader  &trans  &trans  &trans  &trans                          &trans       &trans            &trans             &trans     &kp MINUS      &kp EQUAL
+&studio_unlock  &trans       &trans  &trans  &trans  &trans                          &trans       &trans            &kp UP_ARROW       &trans     &trans         &kp BACKSPACE
+&trans          &trans       &trans  &trans  &trans  &trans                          &trans       &kp LEFT          &kp DOWN           &kp RIGHT  &trans         &trans
+&trans          &trans       &trans  &trans  &trans  &trans  &kp MINUS    &kp EQUAL  &kp KP_PLUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &kp BACKSLASH  &trans
+                                     &trans  &trans  &trans  &trans       &kp PIPE   &trans       &trans            &trans
             >;
 
             label = "lower";
