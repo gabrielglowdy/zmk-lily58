@@ -53,6 +53,11 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <24 49>;
         };
+
+        AltTab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <52 12>;
+        };
     };
 
     keymap {
