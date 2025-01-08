@@ -47,11 +47,6 @@
             bindings = <&kp GREATER_THAN>;
             key-positions = <52 53 11>;
         };
-
-        capslock {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <0 49>;
-        };
     };
 
     keymap {
