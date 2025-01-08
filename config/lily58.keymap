@@ -38,6 +38,16 @@
             bindings = <&ext_power EP_TOG>;
             key-positions = <36 49>;
         };
+
+        lessThan {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <52 53 10>;
+        };
+
+        greaterThan {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <52 53 11>;
+        };
     };
 
     keymap {
@@ -84,11 +94,11 @@
 
             display-name = "lower";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                          &kp F6       &kp F7            &kp F8             &kp F9     &kp F10        &kp BACKSPACE
-&trans  &kp F11  &kp F12  &trans  &trans  &trans                          &trans       &trans            &kp UP_ARROW       &trans     &trans         &kp BACKSPACE
-&trans  &trans   &trans   &trans  &trans  &trans                          &trans       &kp LEFT          &kp DOWN           &kp RIGHT  &trans         &trans
-&trans  &trans   &trans   &trans  &trans  &trans  &kp MINUS    &kp EQUAL  &kp KP_PLUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &kp BACKSLASH  &trans
-                          &trans  &trans  &trans  &trans       &kp PIPE   &trans       &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans       &trans            &trans             &trans     &kp MINUS      &kp EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans       &trans            &kp UP_ARROW       &trans     &trans         &kp BACKSPACE
+&trans  &trans  &trans  &trans  &trans  &trans                          &trans       &kp LEFT          &kp DOWN           &kp RIGHT  &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp MINUS    &kp EQUAL  &kp KP_PLUS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &kp BACKSLASH  &trans
+                        &trans  &trans  &trans  &trans       &kp PIPE   &trans       &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
