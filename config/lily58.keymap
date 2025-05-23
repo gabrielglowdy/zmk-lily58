@@ -60,6 +60,8 @@
             label = "CAPSLOCK";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&caps_word>;
+
+            tapping-term-ms = <300>;
         };
     };
 
